@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Community</title>
+        <style>
+            .row{
+                margin-top:40px;
+            }
+            .left-column{
+                float:left;
+                width:30%;
+                margin-left:30px;
+            }
+            .center-column{
+                width:30%;
+                margin:auto;
+            }
+            .right-column{
+                float:right;
+                width:30%;
+                margin:auto;
+            }
+            .image-container{
+                display: table-cell;
+                vertical-align: middle;
+                margin: auto;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img id="test" src="img/Handshake.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id='w6test' src="img/handheart.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img src="img/handraised.png" height="200" width="200"/></div></div>
+        </div>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img src="img/homefamily.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img src="img/homeneighbourhood.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img src="img/homevirtual.png" height="200" width="200"/></div></div>
+        </div>
+
+        <div class="row">
+            <div class="left-column"><div class="image-container"><img src="img/hugcircle.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img src="img/Hug.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img src="img/hugheart.png" height="200" width="200"/></div></div>
+        </div>
+
+    </body>
+    
+</html>
+
+<script>
+    const img = document.getElementById (`test`)
+    img.onpointerdown = () => console.log (`hi curtis`)
+
+    const slide_sound = document.createElement ('audio')
+    slide_sound.src = 'sound/declined.mp3'
+
+    const circle = document.getElementById ('wk6test')
+    circle.onpointerdown = () => {
+        slide_sound.play ()
+    }
+</script>
+
